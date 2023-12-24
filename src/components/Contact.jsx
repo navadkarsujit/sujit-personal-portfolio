@@ -16,7 +16,7 @@ const Contact = () => {
           </h1>
         </div>
         {/* contact */}
-        <div className="px-2 md:px-0 my-8 flex justify-center items-center text-white">
+        <div className="px-2 md:px-0 my-8 flex justify-center items-center">
           <form action="https://getform.io/f/c19072f2-6d7b-455c-a55c-2a6c376257b0" method="POST" className="flex flex-col w-full md:w-1/2">
             <input
               type="text"

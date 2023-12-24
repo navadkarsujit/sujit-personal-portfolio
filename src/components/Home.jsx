@@ -52,7 +52,7 @@ const Home = () => {
           <HiOutlineMail size={40} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:sujit@gmail.com",
     },
     {
       id: 4,
