@@ -7,6 +7,12 @@ import py from "../assets/skill/py.png";
 import react from "../assets/skill/react.png";
 import hibernate from "../assets/skill/hibernate.png";
 import spring from "../assets/skill/spring.png";
+import np from "../assets/skill/np.png";
+import pd from "../assets/skill/pd.png";
+import mt from "../assets/skill/mt.png";
+import bs from "../assets/skill/bs.png";
+import pbi from "../assets/skill/pbi.png";
+import exc from "../assets/skill/exc.jpg";
 
 const Skills = () => {
   const skill = [
@@ -47,6 +53,32 @@ const Skills = () => {
       style: "shadow-cyan-500",
     },
   ];
+  const libe = [
+    {
+      id: 1,
+      src: np,
+      title: "NumPy",
+      style: "shadow-sky-500",
+    },
+    {
+      id: 2,
+      src: pd,
+      title: "Pandas",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 3,
+      src: mt,
+      title: "Matplotlib",
+      style: "shadow-sky-700",
+    },
+    {
+      id: 4,
+      src: bs,
+      title: "BeautifulSoup",
+      style: "shadow-white",
+    },
+  ];
   const framewor = [
     {
       id: 1,
@@ -58,6 +90,20 @@ const Skills = () => {
       id: 2,
       src: spring,
       title: "Spring",
+      style: "shadow-green-700",
+    },
+  ];
+  const tool = [
+    {
+      id: 1,
+      src: pbi,
+      title: "PowerBI",
+      style: "shadow-stone-600",
+    },
+    {
+      id: 2,
+      src: exc,
+      title: "Excel",
       style: "shadow-green-700",
     },
   ];
@@ -91,7 +137,7 @@ const Skills = () => {
               >
                 <img src={src} alt="" className="" />
                 <div>
-                  <h1 className="text-gray-200 pt-4 md:text-lg ">{title}</h1>
+                  <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
               </div>
             ))}
@@ -100,11 +146,35 @@ const Skills = () => {
         {/* Content */}
         {/* <div className="flex flex-wrap bg-slate-400"> */}
 
+
         <div className="pt-2 mt-6 w-full rounded-b-lg shadow-md bg-gradient-to-b from-transparent via-gray-950 to-gray-900">
+          <h1 className="text-gray-200 text-lg md:text-xl font-semibold px-3 md:px-4 inline">
+          Libraries 
+          </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
+            {/* skills */}
+            {libe.map(({ id, src, style, title }) => (
+              <div
+                key={id}
+                className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
+              >
+                <img src={src} alt="" className="" />
+                <div>
+                  <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+
+        <div className="flex flex-col justify-start md:flex-row">
+
+        <div className="pt-2 mt-6 w-full md:w-5/12 mr-0 md:mr-4 rounded-b-lg shadow-md bg-gradient-to-b from-transparent via-gray-950 to-gray-900">
           <h1 className="text-gray-200 text-lg md:text-xl font-semibold px-3 md:px-4 inline">
             Framework
           </h1>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
             {/* skills */}
             {framewor.map(({ id, src, style, title }) => (
               <div
@@ -113,12 +183,36 @@ const Skills = () => {
               >
                 <img src={src} alt="" className="" />
                 <div>
-                  <h1 className="text-gray-200 pt-4 md:text-lg ">{title}</h1>
+                  <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
+
+        <div className="pt-2 mt-6 w-full md:w-5/12 rounded-b-lg shadow-md bg-gradient-to-b from-transparent via-gray-950 to-gray-900">
+          <h1 className="text-gray-200 text-lg md:text-xl font-semibold px-3 md:px-4 inline">
+            Tools & Technology
+          </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
+            {/* skills */}
+            {tool.map(({ id, src, style, title }) => (
+              <div
+                key={id}
+                className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
+              >
+                <img src={src} alt="" className="" />
+                <div>
+                  <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+              
+        </div>
+
       </div>
     </div>
   );
