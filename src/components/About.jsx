@@ -69,7 +69,7 @@ const About = () => {
           </div>
         </div>
         <div className=" hidden basis-2/3 md:flex justify-center items-center">
-          <img src={pc2} alt="PC" className=" w-full" />
+          <img src={pc2} alt="PC" className=" w-full" loading='lazy' />
         </div>
       </div>
     </div>

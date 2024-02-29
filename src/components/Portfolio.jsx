@@ -84,6 +84,8 @@ const Portfolio = () => {
                     className="group-hover:scale-105 md:h-56 duration-300 w-fit mx-2 rounded-md "
                     src={src}
                     alt="myimage"
+                    loading='lazy'
+                    
                   />
                   <div className="w-full flex flex-col justify-between  ml-3 ">
                     <div className=" flex justify-between items-center mt-5 lg:mt-0 mb-2 pb-1">

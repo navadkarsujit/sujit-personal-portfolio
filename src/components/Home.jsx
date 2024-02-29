@@ -143,7 +143,7 @@ const Home = () => {
           </div>
         </div>
         <div className="basis-0 md:basis-1/2 flex justify-center items-center ">
-          <img src={pc2} alt="PC" className="hidden md:flex w-2/3 md:w-full " />
+          <img src={pc2} alt="PC" className="hidden md:flex w-2/3 md:w-full " loading='lazy'/>
         </div>
       </div>
     </div>

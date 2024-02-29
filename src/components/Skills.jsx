@@ -135,7 +135,7 @@ const Skills = () => {
                 key={id}
                 className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
               >
-                <img src={src} alt="" className="" />
+                <img src={src} alt="" className="" loading='lazy'/>
                 <div>
                   <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
@@ -158,7 +158,7 @@ const Skills = () => {
                 key={id}
                 className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
               >
-                <img src={src} alt="" className="" />
+                <img src={src} alt="" className="" loading='lazy' />
                 <div>
                   <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
@@ -181,7 +181,7 @@ const Skills = () => {
                 key={id}
                 className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
               >
-                <img src={src} alt="" className="" />
+                <img src={src} alt="" className="" loading='lazy'/>
                 <div>
                   <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
@@ -202,7 +202,7 @@ const Skills = () => {
                 key={id}
                 className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
               >
-                <img src={src} alt="" className="" />
+                <img src={src} alt="" className="" loading='lazy'/>
                 <div>
                   <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
