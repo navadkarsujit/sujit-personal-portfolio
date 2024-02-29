@@ -1,7 +1,5 @@
 import React from "react";
 import pc2 from "../assets/pc3.png";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 // import { FaFileArrowDown } from "react-icons/fa6";
 
 const About = () => {
@@ -71,7 +69,7 @@ const About = () => {
           </div>
         </div>
         <div className=" hidden basis-2/3 md:flex justify-center items-center">
-          <LazyLoadImage src={pc2} alt="PC" className=" w-full"   effect="blur" />
+          <img src={pc2} alt="PC" className=" w-full"  />
         </div>
       </div>
     </div>

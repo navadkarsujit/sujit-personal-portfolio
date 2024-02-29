@@ -13,8 +13,6 @@ import mt from "../assets/skill/mt.png";
 import bs from "../assets/skill/bs.png";
 import pbi from "../assets/skill/pbi.png";
 import exc from "../assets/skill/exc.jpg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Skills = () => {
   const skill = [
@@ -137,7 +135,7 @@ const Skills = () => {
                 key={id}
                 className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
               >
-                <LazyLoadImage src={src} alt="" className="" effect="blur" />
+                <img src={src} alt="" className="" />
                 <div>
                   <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
@@ -148,9 +146,10 @@ const Skills = () => {
         {/* Content */}
         {/* <div className="flex flex-wrap bg-slate-400"> */}
 
+
         <div className="pt-2 mt-6 w-full rounded-b-lg shadow-md bg-gradient-to-b from-transparent via-gray-950 to-gray-900">
           <h1 className="text-gray-200 text-lg md:text-xl font-semibold px-3 md:px-4 inline">
-            Libraries
+          Libraries 
           </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
             {/* skills */}
@@ -159,7 +158,7 @@ const Skills = () => {
                 key={id}
                 className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
               >
-                <LazyLoadImage src={src} alt="" className="" effect="blur" />
+                <img src={src} alt="" className=""  />
                 <div>
                   <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
@@ -168,47 +167,52 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-start md:flex-row">
-          <div className="pt-2 mt-6 w-full md:w-5/12 mr-0 md:mr-4 rounded-b-lg shadow-md bg-gradient-to-b from-transparent via-gray-950 to-gray-900">
-            <h1 className="text-gray-200 text-lg md:text-xl font-semibold px-3 md:px-4 inline">
-              Framework
-            </h1>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
-              {/* skills */}
-              {framewor.map(({ id, src, style, title }) => (
-                <div
-                  key={id}
-                  className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
-                >
-                  <LazyLoadImage src={src} alt="" className="" effect="blur" />
-                  <div>
-                    <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          <div className="pt-2 mt-6 w-full md:w-5/12 rounded-b-lg shadow-md bg-gradient-to-b from-transparent via-gray-950 to-gray-900">
-            <h1 className="text-gray-200 text-lg md:text-xl font-semibold px-3 md:px-4 inline">
-              Tools & Technology
-            </h1>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
-              {/* skills */}
-              {tool.map(({ id, src, style, title }) => (
-                <div
-                  key={id}
-                  className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
-                >
-                  <LazyLoadImage src={src} alt="" className="" effect="blur" />
-                  <div>
-                    <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
-                  </div>
+        <div className="flex flex-col justify-start md:flex-row">
+
+        <div className="pt-2 mt-6 w-full md:w-5/12 mr-0 md:mr-4 rounded-b-lg shadow-md bg-gradient-to-b from-transparent via-gray-950 to-gray-900">
+          <h1 className="text-gray-200 text-lg md:text-xl font-semibold px-3 md:px-4 inline">
+            Framework
+          </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
+            {/* skills */}
+            {framewor.map(({ id, src, style, title }) => (
+              <div
+                key={id}
+                className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
+              >
+                <img src={src} alt="" className="" />
+                <div>
+                  <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
+
+
+        <div className="pt-2 mt-6 w-full md:w-5/12 rounded-b-lg shadow-md bg-gradient-to-b from-transparent via-gray-950 to-gray-900">
+          <h1 className="text-gray-200 text-lg md:text-xl font-semibold px-3 md:px-4 inline">
+            Tools & Technology
+          </h1>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-4 md:gap-6 px-3 md:px-4 pt-4 pb-4 md:pb-6 ">
+            {/* skills */}
+            {tool.map(({ id, src, style, title }) => (
+              <div
+                key={id}
+                className={`flex flex-col items-center justify-center rounded-lg hover:scale-105 duration-500 shadow-md p-2 ${style}`}
+              >
+                <img src={src} alt="" className="" />
+                <div>
+                  <h1 className="text-gray-200 pt-2 md:text-lg ">{title}</h1>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+              
+        </div>
+
       </div>
     </div>
   );

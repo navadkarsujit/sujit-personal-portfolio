@@ -8,8 +8,6 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 // import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaFileArrowDown } from "react-icons/fa6";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Home = () => {
   const el = useRef(null);
@@ -145,7 +143,7 @@ const Home = () => {
           </div>
         </div>
         <div className="basis-0 md:basis-1/2 flex justify-center items-center ">
-          <LazyLoadImage src={pc2} alt="PC" className="hidden md:flex w-2/3 md:w-full " effect="blur"/>
+          <img src={pc2} alt="PC" className="hidden md:flex w-2/3 md:w-full " />
         </div>
       </div>
     </div>
