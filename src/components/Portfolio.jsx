@@ -4,6 +4,8 @@ import email from "../assets/portfolio/email.png";
 import springboot from "../assets/portfolio/springboot.png";
 import PB1 from "../assets/portfolio/PB1.png";
 import PB2 from "../assets/portfolio/PB2.png";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import { FaGithub } from "react-icons/fa";
 
@@ -80,14 +82,20 @@ const Portfolio = () => {
               >
                 <div class="flex lg:flex-row lg:justify-start flex-col justify-center items-center ">
                   {/* <div class="group flex flex-col h-full shadow-sm overflow-hidden shadow-red-800 bg-orange-800"> */}
-                  <img
-                    className="group-hover:scale-105 md:h-56 duration-300 w-fit mx-2 rounded-md "
+                  
+                 <div className="w-full lg:w-4/12 mx-2">
+                 <LazyLoadImage
+                    className="group-hover:scale-105  duration-300 rounded-md "
                     src={src}
+                    width={src.width}
                     alt="myimage"
-                    loading='lazy'
+                    effect="blur"
                     
                   />
-                  <div className="w-full flex flex-col justify-between  ml-3 ">
+
+                 </div>
+                  
+                  <div className="w-full lg:w-8/12 flex flex-col justify-between  ml-3 ">
                     <div className=" flex justify-between items-center mt-5 lg:mt-0 mb-2 pb-1">
                       <p className="text-gray-50 font-bold text-2xl">{name}</p>
                     </div>

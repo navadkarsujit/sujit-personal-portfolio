@@ -4,6 +4,8 @@ import email from "../assets/portfolio/email.png";
 import springboot from "../assets/portfolio/springboot.png";
 import wip from "../assets/portfolio/wip.png";
 import { FaGithub } from "react-icons/fa";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Edu = () => {
   const portfolio = [
@@ -75,10 +77,11 @@ const Edu = () => {
               >
                 <div class="flex justify-start w-full">
                   {/* <div class="group flex flex-col h-full shadow-sm overflow-hidden shadow-red-800 bg-orange-800"> */}
-                  <img
+                  <LazyLoadImage
                     className="group-hover:scale-105 h-52 duration-300 w-fit mx-2 rounded-md "
                     src={src}
                     alt="myimage"
+                    effect="blur"
                   />
                   <div className="w-full flex flex-col justify-between  ml-3 ">
                     <div className=" flex justify-between items-center mb-2 pb-1">
