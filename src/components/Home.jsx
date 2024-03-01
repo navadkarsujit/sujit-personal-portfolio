@@ -34,7 +34,7 @@ const Home = () => {
           <FaLinkedin size={35} />
         </>
       ),
-      href: "www.linkedin.com/in/sujit-navadkar-308470239",
+      href: "https://www.linkedin.com/in/sujit-navadkar-308470239/",
     },
     {
       id: 2,
