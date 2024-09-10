@@ -25,21 +25,16 @@ const About = () => {
           </div>
           <div className="w-full  ">
             <p className="text-gray-400 text-base lg:text-lg text-justify">
-              Hello, I'm Sujit Navadkar, a dedicated learner in the field of
-              data science and analytics. With a passion for exploring patterns
-              and trends, I am currently building my skills in uncovering
-              insights from complex datasets using Python, SQL, and advanced
-              analytics techniques.
+              Hello, I'm Sujit Navadkar, a passionate software engineer with experience in automation, data science, and Java development.
+              Currently, I work at Clover Infotech Pvt. Ltd, 
+              where I specialize in automating complex Excel tasks with VBA and web scraping using Selenium to automate browser-based tasks and
+              workflows. My work improves efficiency and simplifies processes.
             </p>
             <br />
             <p className="text-gray-400 text-base lg:text-lg text-justify">
-              In addition to my ongoing learning journey in data science, I also
-              have experience in Java development. I'm deeply passionate about
-              crafting robust solutions and driving innovation, and I'm excited
-              to continue growing and collaborating on projects that leverage
-              technology to make a meaningful impact. Let's connect and explore
-              opportunities to learn and create transformative solutions
-              together!
+              I have hands-on experience in Java development, building console-based, web, and database applications using frameworks like Hibernate and Spring Boot. Additionally, I have a strong background in data science, where I’ve worked on projects involving machine learning and data analysis, utilizing tools like Python, Pandas, and Power BI. I enjoy designing intuitive dashboards and databases that help inform decision-making and optimize performance.
+            <br />
+                With expertise in programming languages such as Python, Java, SQL, and HTML, I constantly seek to improve my skills in automation and machine learning. I’m driven by the desire to create efficient solutions for technical challenges.
             </p>
             <div className="w-full flex justify-center items-center md:justify-start pt-3 mt-3">
               <a
