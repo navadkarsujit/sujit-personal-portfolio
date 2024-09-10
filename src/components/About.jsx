@@ -29,10 +29,7 @@ const About = () => {
             </p>
             <br />
             <p className="text-gray-400 text-base lg:text-lg text-justify">
-              I have hands-on experience in Java development, building applications using Hibernate and Spring Boot. Additionally, I have a background in data science, working with machine learning and data analysis tools like Python, Pandas, and Power BI. I enjoy creating dashboards and databases that support better decision-making.
-            <br />
-              <br />
-With expertise in Python, Java, SQL, and HTML, I’m always looking to refine my skills in automation and machine learning to solve technical challenges effectively.
+              I have hands-on experience in Java development, building applications using Hibernate and Spring Boot. Additionally, I have a background in data science, working with machine learning and data analysis tools like Python, Pandas, and Power BI. I enjoy creating dashboards and databases that support better decision-making. With expertise in Python, Java, SQL, and HTML, I’m always looking to refine my skills in automation and machine learning to solve technical challenges effectively.
             </p>
             <div className="w-full flex justify-center items-center md:justify-start pt-3 mt-3">
               <a
