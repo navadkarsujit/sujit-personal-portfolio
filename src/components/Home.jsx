@@ -13,9 +13,9 @@ const Home = () => {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Data Scientist" ,"Data Analyst","Java Developer"],
+      strings: ["Software Engineer" ,"Data Analyst","Java Developer"],
       startDelay: 100,
-      typeSpeed: 150,
+      typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,
       loop: true,
@@ -86,7 +86,7 @@ const Home = () => {
           <h1 className="text-5xl md:text-6xl text-white font-semibold md:font-bold">
             Sujit Navadkar
           </h1>
-          <h2 className="text-gray-100 font-semibold py-1 md:py-2 text-xl md:text-2xl text-justify md:text-start">
+          <h2 className="text-gray-100 font-semibold py-1 md:py-2 text-xl md:text-xl text-justify md:text-start">
             And I am <span ref={el}></span>
           </h2>
           <p className="text-gray-400  text-lg text-justify md:text-start">
