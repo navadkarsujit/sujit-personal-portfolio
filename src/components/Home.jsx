@@ -90,7 +90,7 @@ const Home = () => {
             And I am <span ref={el}></span>
           </h2>
           <p className="text-gray-400  text-lg text-justify md:text-start">
-            Passionate about changing the world with technology.
+            Passionate about transforming ideas into reality with technology.
           </p>
           <div className="flex justify-start items-center pt-4 ">
             <ul className="w-8/12 md:w-1/3 flex justify-between items-center">
